@@ -8,7 +8,7 @@ warn=$(tput setaf 3)
 error=$(tput setaf 1)
 
 usage() {
-  echo "sync [-h] [--from dir] [--to dir] [--no-snap] [--delete]"
+  echo "zinc [-h] [--from dir] [--to dir] [--no-snap] [--delete]"
 }
 
 help() {
