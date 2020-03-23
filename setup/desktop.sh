@@ -25,5 +25,10 @@ echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile
 sudo apt install lm-sensors
 sensors
 
+# Install fav apps
+sudo snap install spotify
+sudo apt install vlc
+
+
 # Maybe use http://www.bernaerts-nicolas.fr/linux/76-gnome/345-gnome-shell-install-remove-extension-command-line-script
 # to install GNOME extensions?
