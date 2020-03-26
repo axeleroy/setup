@@ -3,6 +3,10 @@
 ./default.sh
 ./development.sh
 
+# Until Linux 5.7's kernel support for exFAT, that's the only way to mount a
+# camera's memory card!
+sudo apt install exfat-utils exfat-fuse -y
+
 # Remove slow to boot GNOME snaps and install native versions
 sudo snap remove gnome-system-monitor
 sudo snap remove gnome-calculator
