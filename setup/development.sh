@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt install build-essential -y
-sudo snap install aws-cli
+sudo snap install aws-cli --classic
 sudo snap install ubuntu-make --classic
 umake nodejs
 sudo snap install intellij-idea-ultimate --classic
