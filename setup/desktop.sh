@@ -14,25 +14,27 @@ sudo apt install gnome-system-monitor -y
 sudo apt install gnome-calculator -y
 
 # Install default GNOME theme and make it default
-sudo apt install gnome-session
+sudo apt install gnome-session -y
 sudo update-alternatives --config gdm3.css
 
 # Install various GNOME tools
-sudo apt install gnome-tweak-tool
-sudo apt-get install chrome-gnome-shell
+sudo apt install gnome-tweak-tool -y
+sudo apt install chrome-gnome-shell -y
 
 # Get Qt apps to use native GTK+ theme
 sudo apt install qt5-style-plugins
 echo "export QT_QPA_PLATFORMTHEME=gtk2" >> ~/.profile
 
 # Get info from computer's sensors
-sudo apt install lm-sensors
+sudo apt install lm-sensors -y
 sensors
+
+# Always useful to edit .desktops
+sudo apt install menulibre -y
 
 # Install fav apps
 sudo snap install spotify
-sudo apt install vlc
-
+sudo apt install vlc -y
 
 # Maybe use http://www.bernaerts-nicolas.fr/linux/76-gnome/345-gnome-shell-install-remove-extension-command-line-script
 # to install GNOME extensions?
