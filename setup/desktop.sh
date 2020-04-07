@@ -3,8 +3,7 @@
 ./default.sh
 ./development.sh
 
-# Until Linux 5.7's kernel support for exFAT, that's the only way to mount a
-# camera's memory card!
+# Until Linux 5.4 / Ubuntu 20.04 support for exFAT, that's the only way to mount a camera's memory card!
 sudo apt install exfat-utils exfat-fuse -y
 
 # Remove slow to boot GNOME snaps and install native versions
@@ -36,5 +35,8 @@ sudo apt install menulibre -y
 sudo snap install spotify
 sudo apt install vlc -y
 
-# Maybe use http://www.bernaerts-nicolas.fr/linux/76-gnome/345-gnome-shell-install-remove-extension-command-line-script
-# to install GNOME extensions?
+# Install GNOME Shell extensions
+while IFS= read -r line
+do
+    python3 ../shell-extensions-management/extension-management.py install "$line"
+done < gnome-extensions-list.txt

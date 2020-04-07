@@ -1,0 +1,7 @@
+dash-to-panel@jderose9.github.com
+drive-menu@gnome-shell-extensions.gcampax.github.com
+freon@UshakovVasilii_Github.yahoo.com
+multi-monitors-add-on@spin83
+switcher@landau.fi
+windowoverlay-icons@sustmidown.centrum.cz
+workspace-isolated-dash@n-yuki
