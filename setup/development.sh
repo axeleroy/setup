@@ -8,6 +8,7 @@ sudo snap install intellij-idea-ultimate --classic
 sudo snap install pycharm-community --classic
 sudo apt install openjdk-8-jdk -y
 sudo apt install python3-pip -y
+sudo apt install webp -y
 
 git config --global user.email "axeleroy@users.noreply.github.com"
 git config --global user.name "Axel Leroy"
