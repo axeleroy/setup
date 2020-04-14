@@ -5,3 +5,4 @@ multi-monitors-add-on@spin83
 switcher@landau.fi
 windowoverlay-icons@sustmidown.centrum.cz
 workspace-isolated-dash@n-yuki
+sound-output-device-chooser@kgshank.net
