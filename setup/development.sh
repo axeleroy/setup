@@ -10,6 +10,8 @@ sudo apt install openjdk-8-jdk -y
 sudo apt install python3-pip -y
 sudo apt install webp -y
 
+npm i -g purgecss
+
 # idea alias to quickly use IntelliJ as an advanced text editor
 echo "alias idea='intellij-idea-ultimate &> /dev/null'" >> ~/.bashrc
 
