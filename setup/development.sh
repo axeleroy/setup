@@ -9,6 +9,7 @@ sudo snap install pycharm-community --classic
 sudo apt install openjdk-8-jdk -y
 sudo apt install python3-pip -y
 sudo apt install webp -y
+sudo apt install curl -y
 
 npm i -g purgecss
 
