@@ -3,7 +3,7 @@
 sudo apt install build-essential -y
 sudo snap install aws-cli --classic
 sudo snap install ubuntu-make --classic
-umake nodejs
+umake nodejs --lts
 sudo snap install intellij-idea-ultimate --classic
 sudo snap install pycharm-community --classic
 sudo apt install openjdk-8-jdk -y
