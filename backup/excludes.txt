@@ -1,0 +1,15 @@
+**/node_modules
+**/build
+**/gen
+**/_site
+**/out
+gems
+snap
+Steam
+.steam
+**/Steam
+.m2
+Musique
+Vidéos
+Images/Photos
+VirtualBox\ VMs
