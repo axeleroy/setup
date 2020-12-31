@@ -3,6 +3,11 @@
 **/gen
 **/_site
 **/out
+**/.cache
+**/caches
+**/cache
+**/log
+.cache
 gems
 snap
 Steam
