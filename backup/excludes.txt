@@ -16,6 +16,7 @@
 .cache
 .npm
 .docker
+bin
 gems
 snap
 Steam
@@ -26,3 +27,4 @@ Musique
 Vidéos
 Images/Photos
 VirtualBox\ VMs
+.local/share/JetBrains/Toolbox
