@@ -28,3 +28,4 @@ Vidéos
 Images/Photos
 VirtualBox\ VMs
 .local/share/JetBrains/Toolbox
+tmp
