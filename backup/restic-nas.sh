@@ -9,4 +9,4 @@ then
   echo "Usage: ./restic-nas.sh <repository> <path to backup>"
 fi
 
-restic backup -r $1 $2 --exclude-caches
+restic backup -r $@ --exclude-caches
