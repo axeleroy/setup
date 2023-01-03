@@ -10,8 +10,7 @@ gTile@vibou
 ubuntu-appindicators@ubuntu.com
 ubuntu-dock@ubuntu.com
 ding@rastersoft.com
-overview_cleaner@gonza.com
 overview-dash-hide@rokenz05.github.com
-Always-Show-Titles-In-Overview@gmail.com
 gnome-ui-tune@itstime.tech
 freon@UshakovVasilii_Github.yahoo.com
+overview-feature-pack@G-dH.github.com
