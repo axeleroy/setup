@@ -4,7 +4,6 @@ Vitals@CoreCoding.com
 bluetooth-quick-connect@bjarosze.gmail.com
 ControlBlurEffectOnLockScreen@pratap.fastmail.fm
 dash-to-panel@jderose9.github.com
-switcher@landau.fi
 sound-output-device-chooser@kgshank.net
 gTile@vibou
 ubuntu-appindicators@ubuntu.com
