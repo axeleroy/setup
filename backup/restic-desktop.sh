@@ -9,4 +9,4 @@
 
 restic backup ~/ \
   --exclude-caches \
-  --exclude-file ~/scripts/backup/excludes.txt
+  --iexclude-file ~/scripts/backup/excludes.txt
