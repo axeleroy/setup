@@ -30,9 +30,11 @@ Musique
 Vidéos
 Images/Photos
 VirtualBox\ VMs
-.local/share/JetBrains/Toolbox
-.local/share/docker/overlay2
-.local/share/docker/image
+.local/share
+!.local/share/docker/volumes
+!.local/share/DisplayCAL/storage
+!.local/share/icc
+!.local/share/app-info
 tmp
 pictures_to_post
 *.ckpt
