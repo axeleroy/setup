@@ -15,6 +15,7 @@
 **/venv*
 **/*.log
 **/.next
+**/site_packages
 .nvm
 .npm
 .docker
@@ -38,3 +39,4 @@ VirtualBox\ VMs
 tmp
 pictures_to_post
 *.ckpt
+.iso
