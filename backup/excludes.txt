@@ -40,3 +40,4 @@ tmp
 pictures_to_post
 *.ckpt
 *.iso
+*.deb
