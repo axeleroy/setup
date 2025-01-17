@@ -30,6 +30,8 @@ Vidéos
 Images/Photos
 VirtualBox\ VMs
 .local/share/JetBrains/Toolbox
+.local/share/docker/overlay2
+.local/share/docker/image
 tmp
 pictures_to_post
 *.ckpt
