@@ -11,9 +11,11 @@
 **/.jekyll-cache
 **/log
 **/__pycache__
-**/venv
+**/venv*s
 **/*.log
-.cache
+**/.next
+**/.cache
+.nvm
 .npm
 .docker
 bin
@@ -29,3 +31,5 @@ Images/Photos
 VirtualBox\ VMs
 .local/share/JetBrains/Toolbox
 tmp
+pictures_to_post
+*.ckpt
