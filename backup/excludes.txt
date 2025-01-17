@@ -8,13 +8,13 @@
 **/.cache
 **/caches
 **/cache
+**/cache*
 **/.jekyll-cache
 **/log
 **/__pycache__
-**/venv*s
+**/venv*
 **/*.log
 **/.next
-**/.cache
 .nvm
 .npm
 .docker
@@ -25,6 +25,7 @@ Steam
 .steam
 **/Steam
 .m2
+.gradle
 Musique
 Vidéos
 Images/Photos
