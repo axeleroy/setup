@@ -39,4 +39,4 @@ VirtualBox\ VMs
 tmp
 pictures_to_post
 *.ckpt
-.iso
+*.iso
