@@ -36,6 +36,8 @@ VirtualBox\ VMs
 !.local/share/DisplayCAL/storage
 !.local/share/icc
 !.local/share/app-info
+!.local/share/gnome-shell
+!.local/share/backgrounds
 tmp
 pictures_to_post
 *.ckpt
