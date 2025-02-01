@@ -1,0 +1,15 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[aws]
+disabled = true
+
+[package]
+disabled = true
+
+[hostname]
+ssh_only = false
+style = 'bold green'

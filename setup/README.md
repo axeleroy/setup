@@ -1,6 +1,5 @@
 # Axel Leroy's setup scripts
-* [default.sh](default.sh): software I need on both destkops and servers.
-* [desktop.sh](desktop.sh): everything I need on a computer with a GUI.
-* [development.sh](development.sh): development tools and IDEs. 
+* [git.sh](git.sh): Git setup.
+* [gnome-extensions.sh](gnome-extensions.sh): Installs and enables preferred GNOME extensions using [https://github.com/essembeh/gnome-extensions-cli](gnome-extensions-cli).
 * [additional.sh](additionnal.sh): additional software I do not need on every computer.
-* [gnome-extensions-list.txt](gnome-extensions-list.txt): Gnome Shell extensions installed by [desktop.sh](desktop.sh). 
+* [gnome-extensions-list.txt](gnome-extensions-install-list.txt): Gnome Shell extensions installed by [desktop.sh](gnome-extensions.sh). 
