@@ -1,0 +1,12 @@
+[Unit]
+Description = nfs mount for media
+
+[Mount]
+What=192.168.0.112:/mnt/pool0/media
+Where=/run/media/media
+Type=nfs
+Options=defaults
+TimeoutSec=5
+
+[Install]
+WantedBy=multi-user.target

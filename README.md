@@ -5,6 +5,7 @@
 * [config](config/): config files.
 * [docker](docker/): Docker management scripts.
 * [setup](setup/): scripts to set up my computers.
+* [systemd](systemd/): systemd services and units.
 
 ## Variables to set in .profile
 
