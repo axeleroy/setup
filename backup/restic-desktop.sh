@@ -30,6 +30,7 @@ restic backup /var/home/axel \
   --exclude-caches \
   --iexclude-file "$SHELL_SETUP_PATH/backup/excludes.txt"
 
-if [ $? -eq 10]; then
+if [[ $? -eq 10 ]]
+then
   echo "Could not access repository, we are probably not on the NAS's network"
 fi
