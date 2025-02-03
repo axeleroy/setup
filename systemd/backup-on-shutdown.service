@@ -1,0 +1,10 @@
+[Unit]
+Description=Run backup script on shutdown
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStop=SHELL_SETUP_PATH/backup/restic-desktop.sh
+
+[Install]
+WantedBy=multi-user.target

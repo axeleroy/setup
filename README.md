@@ -9,6 +9,8 @@
 
 ## Variables to set in .profile
 
+* `SHELL_SETUP_PATH`: path to this project
+
 ### Backups & Synchronization
 * `RESTIC_REPOSITORY`: used in [restic-desktop.sh](backup/restic-desktop.sh) to set where my backup should live on my NAS
 * `RESTIC_PASSWORD_FILE`: path to the file containing the restic password
