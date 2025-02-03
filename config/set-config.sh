@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-ln -b $(pwd)/.bashrc ~/.bashrc
-ln -b $(pwd)/starship.toml ~/.config/starship.toml
+ln -sb $(pwd)/.bashrc ~/.bashrc
+ln -sb $(pwd)/starship.toml ~/.config/starship.toml
