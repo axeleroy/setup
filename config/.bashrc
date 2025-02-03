@@ -132,3 +132,4 @@ esac
 # pnpm end
 
 export PATH="$PATH:/var/home/axel/.local/bin"
+export PATH="$PATH:/var/home/axel/.local/share/JetBrains/Toolbox/scripts"
