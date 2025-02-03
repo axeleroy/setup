@@ -13,3 +13,6 @@ disabled = true
 [hostname]
 ssh_only = false
 style = 'bold green'
+
+[status]
+disabled = false
