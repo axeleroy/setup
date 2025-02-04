@@ -25,6 +25,9 @@ snap
 Steam
 .steam
 **/Steam
+Games
+!Games/**/Documents
+!Games/**/Saved Games
 .m2
 .gradle
 Musique
