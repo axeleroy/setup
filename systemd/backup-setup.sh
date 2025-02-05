@@ -6,10 +6,8 @@ then
   exit 1
 fi
 
-sudo cp backup-on-shutdown.service /etc/systemd/system/
-sudo sed -i "s#SHELL_SETUP_PATH#$SHELL_SETUP_PATH#g" /etc/systemd/system/backup-on-shutdown.service
-# setting user does not seem to help, should take a look into SELinux
-sudo sed -i "s#USER#$(id -u)#g" /etc/systemd/system/backup-on-shutdown.service
-sudo sed -i "s#GROUP#$(id -g)#g" /etc/systemd/system/backup-on-shutdown.service
-systemctl daemon-reload
-systemctl enable backup-on-shutdown.service
+cp ${SHELL_SETUP_PATH}/systemd/backup.* ~/.config/systemd/user
+sed -i "s#SHELL_SETUP_PATH#$SHELL_SETUP_PATH#g" ~/.config/systemd/user/backup.service
+systemctl daemon-reload --user
+systemctl enable backup.timer --user
+systemctl start backup.timer --user

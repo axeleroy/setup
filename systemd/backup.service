@@ -1,0 +1,10 @@
+[Unit]
+Description=Run backup script
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=SHELL_SETUP_PATH/backup/restic-desktop.sh
+
+[Install]
+WantedBy=default.target
