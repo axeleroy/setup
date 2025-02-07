@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 ### Text formatting ###
@@ -16,7 +16,7 @@ pprint "Pulling latest portainer image"
 docker pull portainer/portainer-ce:sts
 pprint "Stopping container"
 docker stop portainer
-pprint "Deleteting container"
+pprint "Deleting container"
 docker rm portainer
 pprint "Re-creating container"
 docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:sts

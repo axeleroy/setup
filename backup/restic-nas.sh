@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script to make snapshots of my.
 # Password and repository are set in RESTIC_PASSWORD_FILE and
