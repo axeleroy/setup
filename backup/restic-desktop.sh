@@ -4,7 +4,8 @@
 # Password and repository are set in RESTIC_PASSWORD_FILE and
 # RESTIC_REPOSITORY respectively
 
-source /var/home/axel/.profile
+# Source environment variables
+source /var/home/axel/.extra
 
 if [[ -z ${RESTIC_PASSWORD_FILE+x} ]]
 then

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
-ln -sb $(pwd)/.bashrc ~/.bashrc
-ln -sb $(pwd)/.bash_aliases ~/.bash_aliases
+for file in $(pwd)/.*; do
+    [ -r "$file" ] && [ -f "$file" ] && [[ $file =~ (\.[a-z]+) ]] && ln -sb $file ~/${BATCH_REMATCH[1]};
+done;
+unset file;
+
 ln -sb $(pwd)/starship.toml ~/.config/starship.toml
