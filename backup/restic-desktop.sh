@@ -5,7 +5,7 @@
 # RESTIC_REPOSITORY respectively
 
 # Source environment variables
-source /var/home/axel/.extra
+source $HOME/.extra
 
 if [[ -z ${RESTIC_PASSWORD_FILE+x} ]]
 then
@@ -27,7 +27,7 @@ fi
 
 echo "Attempting to backup"
 
-restic backup /var/home/axel \
+restic backup $HOME \
   --exclude-caches \
   --iexclude-file "$SHELL_SETUP_PATH/backup/excludes.txt"
 
