@@ -24,7 +24,7 @@ gems
 snap
 Steam
 .steam
-**/Steam
+*.steampid
 Games
 !Games/**/Documents
 !Games/**/Saved Games
@@ -34,13 +34,14 @@ Musique
 Vidéos
 Images/Photos
 VirtualBox\ VMs
-.local/share
+.local/share/docker
 !.local/share/docker/volumes
-!.local/share/DisplayCAL/storage
-!.local/share/icc
-!.local/share/app-info
-!.local/share/gnome-shell
-!.local/share/backgrounds
+.local/share/Steam
+!.local/share/Steam/steamapps/compatdata
+.local/share/pnpm
+.local/share/JetBrains
+.local/share/Trash
+.local/share/uv
 tmp
 pictures_to_post
 *.ckpt
