@@ -42,6 +42,7 @@ VirtualBox\ VMs
 .local/share/JetBrains
 .local/share/Trash
 .local/share/uv
+.local/share/flatpak/runtime
 tmp
 pictures_to_post
 *.ckpt
