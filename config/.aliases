@@ -3,6 +3,12 @@ loremcopy() {
 }
 
 alias uuid="uuidgen | tee >(wl-copy)"
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com | tee >(wl-copy)"
+
+whois_more() {
+ whois "$@" | more
+}
+alias whois=whois_more
 
 # some more ls aliases
 alias ll='ls -alF'
