@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 if [[ -z ${SHELL_SETUP_PATH+x} ]]
 then
   echo "Environment variable SHELL_SETUP_PATH is not set!"

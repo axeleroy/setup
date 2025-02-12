@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 if ! command -v gnome-extensions-cli 2>&1 >/dev/null
 then
     echo "gnome-extensions-cli is required"
