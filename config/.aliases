@@ -1,9 +1,13 @@
-loremcopy() {
-  lipsum-cli "$@" | tee >(wl-copy)
+print_n_copy() {
+ "$@" | tee >(wl-copy)
 }
 
-alias uuid="uuidgen | tee >(wl-copy)"
-alias myip="dig +short myip.opendns.com @resolver1.opendns.com | tee >(wl-copy)"
+loremcopy() {
+  print_n_copy lipsum-cli "$@"
+}
+
+alias uuid="print_n_copy uuidgen"
+alias myip="print_n_copy dig +short myip.opendns.com @resolver1.opendns.com"
 
 whois_more() {
  whois "$@" | more
