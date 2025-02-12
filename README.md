@@ -1,9 +1,12 @@
-# Axel Leroy's shell setup
+# Axel Leroy's setup
+
+Various configuration files and scripts to set up and manage my computers.  
 
 ## Folder structure
 * [backup](backup/): backup scripts.
-* [config](config/): config files.
+* [config](config/): shell config files.
 * [docker](docker/): Docker management scripts.
+* [pipewire](pipewire/): Pipewire configuration.
 * [setup](setup/): scripts to set up my computers.
 * [systemd](systemd/): systemd services and units.
 
