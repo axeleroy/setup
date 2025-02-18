@@ -14,6 +14,13 @@ whois_more() {
 }
 alias whois=whois_more
 
+urlencode() {
+ echo -n "$@" | jq -s -R -r @uri | tee >(wl-copy)
+}
+urldecode() {
+ echo -n "$@" | gojq -s -R -r @urid | tee >(wl-copy)
+}
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
