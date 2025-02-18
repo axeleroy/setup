@@ -1,0 +1,10 @@
+[Unit]
+Description=Update setup
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=SHELL_SETUP_PATH/utils/pull.sh
+
+[Install]
+WantedBy=default.target
