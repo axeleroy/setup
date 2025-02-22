@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
+
+source ${SHELL_SETUP_PATH}/setup/is-steamos.sh
+if [[ $(exit_on_steamos) -eq 1 ]]; then exit 0; fi
 
 if ! command -v gnome-extensions-cli 2>&1 >/dev/null
 then
@@ -12,10 +15,10 @@ while IFS= read -r line
 do
     echo "Installing $line"
     gnome-extensions-cli install "$line"
-done < gnome-extensions-install-list.txt
+done < ${SHELL_SETUP_PATH}/setup/gnome-extensions-install-list.txt
 
 while IFS= read -r line
 do
-    echo "Disable $line"
+    echo "Disabling $line"
     gnome-extensions-cli disable "$line"
-done < gnome-extensions-disable-list.txt
+done < ${SHELL_SETUP_PATH}/setup/gnome-extensions-disable-list.txt

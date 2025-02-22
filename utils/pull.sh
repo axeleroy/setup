@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
 source $HOME/.extra
 
@@ -12,3 +12,5 @@ fi
 
 echo "Pulling $SHELL_SETUP_PATH"
 cd $SHELL_SETUP_PATH && git pull
+echo "Running migrations"
+bash $SHELL_SETUP_PATH/setup/migrate.sh
