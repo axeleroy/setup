@@ -21,6 +21,10 @@ urldecode() {
  echo -n "$@" | gojq -s -R -r @urid | tee >(wl-copy)
 }
 
+to_mp4() {
+ ffmpeg -fflags +genpts -i "$1" -r 24 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" "$(basename "${1%.*}").mp4"
+}
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
