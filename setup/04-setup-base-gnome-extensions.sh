@@ -3,7 +3,7 @@
 set -euo pipefail
 
 source ${SHELL_SETUP_PATH}/setup/is-steamos.sh
-if [[ $(exit_on_steamos) -eq 1 ]]; then exit 0; fi
+if [[ $(is_steamos) -eq 1 ]]; then exit 0; fi
 
 if ! command -v gnome-extensions-cli 2>&1 >/dev/null
 then

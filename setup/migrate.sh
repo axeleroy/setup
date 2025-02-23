@@ -15,7 +15,7 @@ for migration_file in ${SHELL_SETUP_PATH}/setup/[0-9]*.sh; do
     echo "Migration $migration already ran"
   else
     echo "Running $migration"
-    bash "$migration_file"
+    bash "$migration_file" || (echo "Migration $migration failed" && exit 1)
     echo "Migration $migration successful"
     echo "$migration" >> ${SHELL_SETUP_PATH}/setup/migrated.txt
   fi
