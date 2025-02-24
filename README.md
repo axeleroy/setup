@@ -1,6 +1,6 @@
 # Axel Leroy's setup
 
-Various configuration files and scripts to set up and manage my computers.  
+Various configuration files and scripts used to synchronise setup across my computers and to manage them.
 
 ## Folder structure
 * [backup](backup/): backup scripts.
