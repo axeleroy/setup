@@ -25,6 +25,11 @@ to_mp4() {
  ffmpeg -fflags +genpts -i "$1" -r 24 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" "$(basename "${1%.*}").mp4"
 }
 
+alias ngrok='docker run --net=host -it -e NGROK_AUTHTOKEN="$NGROK_AUTHTOKEN" ngrok/ngrok:latest'
+ngrok_url() {
+ curl -s http://127.0.0.1:4040/api/tunnels | jq -r '.tunnels[0].public_url' | tee >(wl-copy)
+}
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
