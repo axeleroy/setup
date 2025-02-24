@@ -12,3 +12,5 @@ echo "Installing Signal"
 flatpak install -y org.signal.Signal
 echo "Installing Text Pieces"
 flatpak install -y io.gitlab.liferooter.TextPieces
+echo "Installing LocalSend"
+flatpak install -y org.localsend.localsend_app

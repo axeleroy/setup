@@ -16,8 +16,8 @@ by database migration tools like Flyway.
 * [07-enable-pipewire-switch-on-connect](07-enable-pipewire-switch-on-connect.sh): enables Pipewire's `switch-on-connect`
   module.
 * [08-install-flatpaks](08-install-flatpaks.sh): installs [Zen Browser](https://zen-browser.app/),
-  [Valuta](https://apps.gnome.org/app/io.github.idevecore.Valuta), [Signal](https://signal.org/download/)
-  and [Text Pieces](https://apps.gnome.org/app/io.gitlab.liferooter.TextPieces)
+  [Valuta](https://apps.gnome.org/app/io.github.idevecore.Valuta), [Signal](https://signal.org/download/),
+  [LocalSend](https://localsend.org) and [Text Pieces](https://apps.gnome.org/app/io.gitlab.liferooter.TextPieces)
 
 
 ## Other files
