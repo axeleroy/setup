@@ -17,7 +17,8 @@ by database migration tools like Flyway.
   module.
 * [08-install-flatpaks](08-install-flatpaks.sh): installs [Zen Browser](https://zen-browser.app/),
   [Valuta](https://apps.gnome.org/app/io.github.idevecore.Valuta), [Signal](https://signal.org/download/),
-  [LocalSend](https://localsend.org) and [Text Pieces](https://apps.gnome.org/app/io.gitlab.liferooter.TextPieces)
+  [LocalSend](https://localsend.org) and [Text Pieces](https://apps.gnome.org/app/io.gitlab.liferooter.TextPieces).
+* [09-set-up-gitconfig](09-set-up-gitconfig.sh): copies `.gitconfig` and `.gitignore` to `$HOME`.
 
 
 ## Other files
