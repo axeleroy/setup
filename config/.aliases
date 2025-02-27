@@ -14,6 +14,11 @@ whois_more() {
 }
 alias whois=whois_more
 
+rdap_more() {
+ rdap "$@" | more
+}
+alias rdap=rdap_more
+
 urlencode() {
  echo -n "$@" | jq -s -R -r @uri | tee >(wl-copy)
 }
