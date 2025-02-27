@@ -23,5 +23,4 @@ by database migration tools like Flyway.
 
 ## Other files
 
-* [is-steamos.sh](is-steamos.sh): function to determine if the current migration is running on a Steam Deck.
 * [gnome-extensions-install-list.txt](gnome-extensions-install-list.txt) and [gnome-extensions-disable-list.txt](gnome-extensions-disable-list.txt): Gnome Shell extensions installed and disabled by [gnome-extensions.sh](04-setup-base-gnome-extensions.sh). 

@@ -8,6 +8,16 @@ then
   exit 1
 fi
 
+is_steamos() {
+  if command -v steamos-readonly >& /dev/null
+  then
+    echo 1
+  else
+    echo 0
+  fi
+}
+export -f is_steamos
+
 for migration_file in ${SHELL_SETUP_PATH}/setup/[0-9]*.sh; do
   migration=$(basename ${migration_file%.sh})
   if grep -Fxq "$migration" ${SHELL_SETUP_PATH}/setup/migrated.txt

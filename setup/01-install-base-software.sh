@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-source ${SHELL_SETUP_PATH}/setup/is-steamos.sh
 if [[ $(is_steamos) -eq 1 ]]; then exit 0; fi
 
 echo "Installing uv"
