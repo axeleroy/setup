@@ -51,6 +51,8 @@ qrcode() {
  arg_or_paste "$@"| qrtool encode -t unicode
 }
 
+alias ngrokqr='qrcode $(ngrok_url)'
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
