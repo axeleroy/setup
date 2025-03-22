@@ -24,6 +24,8 @@ gems
 snap
 Steam
 .steam
+!.steam/steam/steamapps/compatdata
+!.steam/steam/userdata
 *.steampid
 Games
 !Games/**/Documents
@@ -38,6 +40,7 @@ VirtualBox\ VMs
 !.local/share/docker/volumes
 .local/share/Steam
 !.local/share/Steam/steamapps/compatdata
+!.local/share/Steam/userdata
 .local/share/pnpm
 .local/share/JetBrains
 .local/share/Trash
