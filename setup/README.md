@@ -21,6 +21,8 @@ by database migration tools like Flyway.
 * [09-set-up-gitconfig](09-set-up-gitconfig.sh): copies `.gitconfig` and `.gitignore` to `$HOME`.
 * [10-install-qrtool](10-install-qrtool.sh): installs [`qrtool`](https://github.com/sorairolake/qrtool).
 * [11-install-gimp-inkscape](11-install-gimp-inkscape.sh): installs GIMP and Inkscape.
+* [12-link-wireplumber-conf](12-link-wireplumber-conf.sh): copies a custom WirePlumber configuration to set devices 
+priorities.
 
 
 ## Other files

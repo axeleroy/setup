@@ -4,7 +4,7 @@ Various configuration files and scripts used to synchronise setup across my comp
 
 ## Folder structure
 * [backup](backup/): backup scripts.
-* [config](config/): shell config files.
+* [config](config/): config files.
 * [docker](docker/): Docker management scripts.
 * [pipewire](pipewire/): Pipewire configuration.
 * [setup](setup/): scripts to set up my computers.
