@@ -23,6 +23,7 @@ by database migration tools like Flyway.
 * [11-install-gimp-inkscape](11-install-gimp-inkscape.sh): installs GIMP and Inkscape.
 * [12-link-wireplumber-conf](12-link-wireplumber-conf.sh): copies a custom WirePlumber configuration to set devices 
 priorities.
+* [13-copy-curl-format.sh](13-copy-curl-format.sh): copies a `.curl_format` file to `$HOME` [in order to mesure responses times](https://stackoverflow.com/a/22625150).
 
 
 ## Other files

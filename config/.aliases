@@ -52,6 +52,8 @@ qrcode() {
 
 alias ngrokqr='qrcode $(ngrok_url)'
 
+alias curltime="curl -w \"@$HOME/.curl_format\" -o /dev/null -s "
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
