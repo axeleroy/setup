@@ -8,7 +8,6 @@ by database migration tools like Flyway.
 * [01-install-base-software](01-install-base-software.sh): installs `uv`, `tealdeer`, `isd`, `gnome-extensions-cli`
   and `gojq`
 * [02-set-config](02-set-config.sh): copies my shell config files.
-* [03-git-setup](03-git-setup.sh): sets up Git.
 * [04-setup-base-gnome-extensions.sh](04-setup-base-gnome-extensions.sh): installs and enables preferred GNOME extensions
   using [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli).
 * [06-setup-services](06-setup-services.sh): sets up the automated backup service, as well as a service that pulls this
