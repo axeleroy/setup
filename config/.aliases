@@ -11,6 +11,10 @@ arg_or_paste() {
   fi
 }
 
+# Replace jq with gojq
+alias realjq="jq"
+alias jq="gojq"
+
 loremcopy() {
   print_n_copy lipsum-cli "$@"
 }
@@ -32,7 +36,7 @@ urlencode() {
  arg_or_paste "$@" | jq -s -R -r @uri | tee >(wl-copy)
 }
 urldecode() {
- arg_or_paste "$@" | gojq -s -R -r @urid | tee >(wl-copy)
+ arg_or_paste "$@" | jq -s -R -r @urid | tee >(wl-copy)
 }
 
 alias formatjson='wl-paste | json_reformat | tee >(wl-copy)'
