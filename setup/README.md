@@ -11,7 +11,7 @@ by database migration tools like Flyway.
 * [03-git-setup](03-git-setup.sh): sets up Git.
 * [04-setup-base-gnome-extensions.sh](04-setup-base-gnome-extensions.sh): installs and enables preferred GNOME extensions
   using [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli).
-* [06-setup-services](06-setup-services.sh): sets up automated the backup service, as well as a service that pulls this
+* [06-setup-services](06-setup-services.sh): sets up the automated backup service, as well as a service that pulls this
   repo on startup.
 * [07-enable-pipewire-switch-on-connect](07-enable-pipewire-switch-on-connect.sh): enables Pipewire's `switch-on-connect`
   module.
@@ -22,8 +22,10 @@ by database migration tools like Flyway.
 * [10-install-qrtool](10-install-qrtool.sh): installs [`qrtool`](https://github.com/sorairolake/qrtool).
 * [11-install-gimp-inkscape](11-install-gimp-inkscape.sh): installs GIMP and Inkscape.
 * [12-link-wireplumber-conf](12-link-wireplumber-conf.sh): copies a custom WirePlumber configuration to set devices 
-priorities.
-* [13-copy-curl-format.sh](13-copy-curl-format.sh): copies a `.curl_format` file to `$HOME` [in order to mesure responses times](https://stackoverflow.com/a/22625150).
+  priorities.
+* [13-copy-curl-format.sh](13-copy-curl-format.sh): copies a `.curl_format` file to `$HOME` and sets up an alias
+  [in order to mesure responses times](https://stackoverflow.com/a/22625150).
+* [14-install-resources](14-install-resources.sh): installs [Resources](https://apps.gnome.org/fr/Resources/).
 
 
 ## Other files
