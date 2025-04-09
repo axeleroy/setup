@@ -36,6 +36,7 @@ urldecode() {
 }
 
 alias formatjson='wl-paste | json_reformat | tee >(wl-copy)'
+alias minifyjson='wl-paste | jq -c -r | tee >(wl-copy)'
 
 tomp4() {
  ffmpeg -fflags +genpts -i "$1" -r 24 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" "$(basename "${1%.*}").mp4"
