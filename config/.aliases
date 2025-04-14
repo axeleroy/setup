@@ -7,7 +7,7 @@ arg_or_paste() {
   then
     echo -n "$@"
   else
-    wl-paste
+    wl-paste -n
   fi
 }
 
@@ -37,6 +37,12 @@ urlencode() {
 }
 urldecode() {
  arg_or_paste "$@" | jq -s -R -r @urid | tee >(wl-copy)
+}
+base64encode() {
+  arg_or_paste "$@" | base64 | tee >(wl-copy)
+}
+base64decode() {
+  arg_or_paste "$@" | base64 -d | tee >(wl-copy)
 }
 
 alias formatjson='wl-paste | json_reformat | tee >(wl-copy)'
