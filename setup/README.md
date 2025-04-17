@@ -25,7 +25,8 @@ by database migration tools like Flyway.
 * [13-copy-curl-format.sh](13-copy-curl-format.sh): copies a `.curl_format` file to `$HOME` and sets up an alias
   [in order to mesure responses times](https://stackoverflow.com/a/22625150).
 * [14-install-resources](14-install-resources.sh): installs [Resources](https://apps.gnome.org/fr/Resources/).
-
+* [15-disable-hsp-hfp-profiles](15-disable-hsp-hfp-profiles.sh): copies a custom WirePlumber configuration to only 
+enable A2DP bluetooth profile (thus disabling HSP and HFP profiles).
 
 ## Other files
 
