@@ -8,15 +8,15 @@ then
   exit 1
 fi
 
-is_steamos() {
-  if command -v steamos-readonly >& /dev/null
+is_hostname() {
+  if [[ $(hostname) -eq $1 ]]
   then
     echo 1
   else
     echo 0
   fi
 }
-export -f is_steamos
+export -f is_hostname
 
 for migration_file in ${SHELL_SETUP_PATH}/setup/[0-9]*.sh; do
   migration=$(basename ${migration_file%.sh})

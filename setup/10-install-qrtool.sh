@@ -2,6 +2,6 @@
 
 set -euo pipefail
 
-if [[ $(is_steamos) -eq 1 ]]; then exit 0; fi
+if [[ $(is_hostname steamdeck) -eq 1 ]]; then exit 0; fi
 
 brew install qrtool
