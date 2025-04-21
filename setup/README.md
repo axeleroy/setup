@@ -27,6 +27,9 @@ by database migration tools like Flyway.
 * [14-install-resources](14-install-resources.sh): installs [Resources](https://apps.gnome.org/fr/Resources/).
 * [15-disable-hsp-hfp-profiles](15-disable-hsp-hfp-profiles.sh): copies a custom WirePlumber configuration to only 
 enable A2DP bluetooth profile (thus disabling HSP and HFP profiles).
+* [16-install-removed-packages](16-install-removed-packages.sh): installs [Refine](https://flathub.org/apps/page.tesk.Refine)
+and [Document Scanner](https://flathub.org/apps/org.gnome.SimpleScan) as Flatpaks, since GNOME Tweaks and Scanner
+packages [have been removed in Bluefin](https://universal-blue.discourse.group/t/upcoming-changes-to-bluefin-packages-for-the-f42-release/7711).
 
 ## Other files
 
