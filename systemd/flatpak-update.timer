@@ -1,0 +1,9 @@
+[Unit]
+Description=Run flatpak update service 5min after boot then every hour
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target

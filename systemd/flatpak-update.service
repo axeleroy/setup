@@ -1,0 +1,10 @@
+[Unit]
+Description=Run flatpak update
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/flatpak --user uninstall --unused -y --noninteractive ; /usr/bin/flatpak --user update -y --noninteractive ; /usr/bin/flatpak --user repair
+
+[Install]
+WantedBy=default.target

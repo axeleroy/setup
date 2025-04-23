@@ -6,7 +6,7 @@ by database migration tools like Flyway.
 ## Migrations
 
 * [01-install-base-software](01-install-base-software.sh): installs `uv`, `tealdeer`, `isd`, `gnome-extensions-cli`
-  and `gojq`
+  and `gojq`.
 * [02-set-config](02-set-config.sh): copies my shell config files.
 * [04-setup-base-gnome-extensions.sh](04-setup-base-gnome-extensions.sh): installs and enables preferred GNOME extensions
   using [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli).
@@ -30,6 +30,8 @@ enable A2DP bluetooth profile (thus disabling HSP and HFP profiles).
 * [16-install-removed-packages](16-install-removed-packages.sh): installs [Refine](https://flathub.org/apps/page.tesk.Refine)
 and [Document Scanner](https://flathub.org/apps/org.gnome.SimpleScan) as Flatpaks, since GNOME Tweaks and Scanner
 packages [have been removed in Bluefin](https://universal-blue.discourse.group/t/upcoming-changes-to-bluefin-packages-for-the-f42-release/7711).
+* [17-setup-flatpack-update-service](17-setup-flatpack-update-service.sh): systemd timer and service to automatically
+update Flatpaks on SteamOS.
 
 ## Other files
 
