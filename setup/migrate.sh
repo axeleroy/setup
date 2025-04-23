@@ -9,7 +9,7 @@ then
 fi
 
 is_hostname() {
-  if [[ $(hostname) -eq "$1" ]]
+  if [[ $(uname -n) -eq "$1" ]]
   then
     echo 1
   else
