@@ -9,14 +9,21 @@ then
 fi
 
 is_hostname() {
+  set +u
   if [[ $(uname -n) -eq "$1" ]]
   then
     echo 1
   else
     echo 0
   fi
+  set -u
 }
 export -f is_hostname
+
+if [[ ! -x ${SHELL_SETUP_PATH}/setup/migrated.txt ]]
+then
+  touch ${SHELL_SETUP_PATH}/setup/migrated.txt
+fi
 
 for migration_file in ${SHELL_SETUP_PATH}/setup/[0-9]*.sh; do
   migration=$(basename ${migration_file%.sh})
