@@ -1,16 +1,3 @@
-print_n_copy() {
- "$@" | tee >(wl-copy)
-}
-
-arg_or_paste() {
-  if [[ ! -z $@ ]]
-  then
-    echo -n "$@"
-  else
-    wl-paste -n
-  fi
-}
-
 # Replace jq with gojq
 alias realjq="jq"
 alias jq="gojq"

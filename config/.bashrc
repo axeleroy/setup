@@ -18,3 +18,5 @@ for file in ~/.{path,exports,bash_prompt,functions,aliases,extra}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+eval "$(mise activate bash)"

@@ -32,6 +32,7 @@ and [Document Scanner](https://flathub.org/apps/org.gnome.SimpleScan) as Flatpak
 packages [have been removed in Bluefin](https://universal-blue.discourse.group/t/upcoming-changes-to-bluefin-packages-for-the-f42-release/7711).
 * [17-setup-flatpack-update-service](17-setup-flatpack-update-service.sh): systemd timer and service to automatically
 update Flatpaks on SteamOS.
+* [18-setup-mise](18-setup-mise.sh): installs and sets up [mise-en-place](https://mise.jdx.dev).
 
 ## Other files
 
