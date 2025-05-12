@@ -36,6 +36,7 @@ update Flatpaks on SteamOS.
 * [19-install-ignition](19-install-ignition.sh): installs [Ignition](https://github.com/flattool/ignition/) to replace 
 the lost startup management feature from GNOME Tweaks.
 * [20-install-duckdb](20-install-duckdb.sh): installs DuckDB.
+* [21-install-libreoffice](21-install-libreoffice.sh): installs LibreOffice.
 
 ## Other files
 
