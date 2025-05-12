@@ -35,6 +35,7 @@ update Flatpaks on SteamOS.
 * [18-setup-mise](18-setup-mise.sh): installs and sets up [mise-en-place](https://mise.jdx.dev).
 * [19-install-ignition](19-install-ignition.sh): installs [Ignition](https://github.com/flattool/ignition/) to replace 
 the lost startup management feature from GNOME Tweaks.
+* [20-install-duckdb](20-install-duckdb.sh): installs DuckDB.
 
 ## Other files
 
