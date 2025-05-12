@@ -33,6 +33,8 @@ packages [have been removed in Bluefin](https://universal-blue.discourse.group/t
 * [17-setup-flatpack-update-service](17-setup-flatpack-update-service.sh): systemd timer and service to automatically
 update Flatpaks on SteamOS.
 * [18-setup-mise](18-setup-mise.sh): installs and sets up [mise-en-place](https://mise.jdx.dev).
+* [19-install-ignition](19-install-ignition.sh): installs [Ignition](https://github.com/flattool/ignition/) to replace 
+the lost startup management feature from GNOME Tweaks.
 
 ## Other files
 
