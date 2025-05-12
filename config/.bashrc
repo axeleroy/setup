@@ -19,4 +19,7 @@ for file in ~/.{path,exports,bash_prompt,functions,aliases,extra}; do
 done;
 unset file;
 
-eval "$(mise activate bash)"
+if which mise &> /dev/null
+then
+  eval "$(mise activate bash)"
+fi
