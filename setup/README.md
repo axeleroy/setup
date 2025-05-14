@@ -37,6 +37,9 @@ update Flatpaks on SteamOS.
 the lost startup management feature from GNOME Tweaks.
 * [20-install-duckdb](20-install-duckdb.sh): installs DuckDB.
 * [21-install-libreoffice](21-install-libreoffice.sh): installs LibreOffice.
+* [22-patch-always-show-title-extension](22-patch-always-show-title-extension.sh): patches the extension
+[Always Show Titles In Overview](https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/) for GNOME
+48 supports. Also installs [moreutils](https://joeyh.name/code/moreutils/).
 
 ## Other files
 
