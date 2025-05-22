@@ -1,5 +1,5 @@
 print_n_copy() {
- pee cat wl-copy
+ pee cat "wl-copy -n"
 }
 
 arg_or_paste() {
