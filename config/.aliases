@@ -6,7 +6,7 @@ loremcopy() {
   lipsum-cli "$@" | print_n_copy
 }
 
-alias uuid="uuidgen | print_n_copy "
+alias uuid="uuidgen | print_n_copy"
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com | print_n_copy"
 
 whois_more() {
