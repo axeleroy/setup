@@ -40,6 +40,7 @@ the lost startup management feature from GNOME Tweaks.
 * [22-patch-always-show-title-extension](22-patch-always-show-title-extension.sh): patches the extension
 [Always Show Titles In Overview](https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/) for GNOME
 48 supports. Also installs [moreutils](https://joeyh.name/code/moreutils/).
+* [23-install-pandoc-html2markdown](23-install-pandoc-html2markdown.sh): installs Pandoc and [html2markdown](https://github.com/JohannesKaufmann/html-to-markdown).
 
 ## Other files
 
