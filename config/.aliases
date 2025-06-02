@@ -52,6 +52,9 @@ alias ngrokqr='qrcode $(ngrok_url)'
 
 alias curltime="curl -w \"@$HOME/.curl_format\" -o /dev/null -s "
 
+alias rich2md="wl-paste -t text/html | html2markdown --plugin-table --opt-table-header-promotion | print_n_copy"
+alias md2rich="wl-paste -n | pandoc | wl-copy -t text/html"
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
