@@ -20,6 +20,19 @@ is_hostname() {
 }
 export -f is_hostname
 
+brew_install() {
+  set +u
+  if /home/linuxbrew/.linuxbrew/bin/brew list | grep -Fwq "${1##*/}"
+  then
+    echo "Formulae $1 already installed"
+  else
+    echo "Installing formulae $1"
+    brew_install "$1"
+  fi
+  set -u
+}
+export -f brew_install
+
 if [[ ! -x ${SHELL_SETUP_PATH}/setup/migrated.txt ]]
 then
   touch ${SHELL_SETUP_PATH}/setup/migrated.txt
