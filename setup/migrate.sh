@@ -27,7 +27,7 @@ brew_install() {
     echo "Formulae $1 already installed"
   else
     echo "Installing formulae $1"
-    brew_install "$1"
+    /home/linuxbrew/.linuxbrew/bin/brew install "$1"
   fi
   set -u
 }
