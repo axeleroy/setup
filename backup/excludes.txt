@@ -52,3 +52,4 @@ pictures_to_post
 *.ckpt
 *.iso
 *.deb
+.var/app/org.gnome.Boxes
