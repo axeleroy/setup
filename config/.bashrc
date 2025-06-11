@@ -12,6 +12,10 @@ esac
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
+# Source VTE
+if [ -f /etc/profile.d/vte.sh ]; then
+    . /etc/profile.d/vte.sh
+fi
 
 # Inspired by https://daler.github.io/dotfiles/bash.html
 for file in ~/.{path,exports,bash_prompt,functions,aliases,extra}; do
