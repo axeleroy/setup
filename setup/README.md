@@ -41,6 +41,9 @@ the lost startup management feature from GNOME Tweaks.
 [Always Show Titles In Overview](https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/) for GNOME
 48 supports. Also installs [moreutils](https://joeyh.name/code/moreutils/).
 * [23-install-pandoc-html2markdown](23-install-pandoc-html2markdown.sh): installs Pandoc and [html2markdown](https://github.com/JohannesKaufmann/html-to-markdown).
+* [24-disable-ibus-emoji-hotkey](24-disable-ibus-emoji-hotkey.sh): [disables the Unicode Code Point shortcut](https://superuser.com/questions/358749/how-to-disable-ctrlshiftu/1392682#1392682)
+  as it interferes with JetBrains IDEs' "Toggle Case" shortcut (both are set to
+  <kbd><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd></kbd>).
 
 ## Other files
 
