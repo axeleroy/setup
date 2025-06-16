@@ -58,6 +58,13 @@ csv2md() {
   duckdb -markdown $1 "SELECT * from '$1';" | print_n_copy
 }
 
+kill_port() {
+  sudo fuser -k $1/tcp
+}
+
+alias getpath="readlink -f"
+alias pathperm="namei -l"
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
