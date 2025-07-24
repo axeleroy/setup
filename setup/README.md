@@ -44,7 +44,7 @@ the lost startup management feature from GNOME Tweaks.
 * [24-disable-ibus-emoji-hotkey](24-disable-ibus-emoji-hotkey.sh): [disables the Unicode Code Point shortcut](https://superuser.com/questions/358749/how-to-disable-ctrlshiftu/1392682#1392682)
   as it interferes with JetBrains IDEs' "Toggle Case" shortcut (both are set to
   <kbd><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd></kbd>).
-* [25-install-pg_activity](25-install-pg_activity.sh): installs `pipx` and [pg_activity](https://github.com/dalibo/pg_activity).
+* [25-install-pg_activity](25-install-pg_activity.sh): installs [pg_activity](https://github.com/dalibo/pg_activity).
 
 ## Other files
 
