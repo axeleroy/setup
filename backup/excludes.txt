@@ -16,6 +16,7 @@
 **/*.log
 **/.next
 **/site_packages
+**/bin
 .nvm
 .npm
 .docker
