@@ -10,7 +10,7 @@ fi
 
 is_hostname() {
   set +u
-  if [[ $(uname -n) -eq "$1" ]]
+  if [ $(uname -n) == "$1" ]
   then
     echo 1
   else
