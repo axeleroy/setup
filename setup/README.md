@@ -46,6 +46,7 @@ the lost startup management feature from GNOME Tweaks.
   <kbd><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd></kbd>).
 * [25-install-pg_activity](25-install-pg_activity.sh): installs [pg_activity](https://github.com/dalibo/pg_activity).
 * [26-install_rdap](26-install_rdap.sh): installs [OpenRDAP](https://www.openrdap.org/).
+* [27-install-smile](27-install-smile.sh): installs [Smile](https://mijorus.it/projects/smile/) and sets up a keyboard shortcut for it.
 
 ## Other files
 
