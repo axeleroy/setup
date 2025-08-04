@@ -35,6 +35,8 @@ base64decode() {
 alias formatjson='wl-paste | json_reformat | print_n_copy'
 alias minifyjson='wl-paste | jq -c -r | print_n_copy'
 
+alias unescapehtml="wl-paste -n | python3 -c 'import html, sys; [print(html.unescape(l), end=\"\") for l in sys.stdin]' | print_n_copy"
+
 tomp4() {
  ffmpeg -fflags +genpts -i "$1" -r 24 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" "$(basename "${1%.*}").mp4"
 }
