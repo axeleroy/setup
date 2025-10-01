@@ -19,6 +19,10 @@ rdap_more() {
 }
 alias rdap=rdap_more
 
+npm-search() {
+ npm search "$@" | more
+}
+
 urlencode() {
  arg_or_paste "$@" | jq -s -R -r @uri | print_n_copy
 }
