@@ -23,6 +23,25 @@ npm-search() {
  npm search "$@" | more
 }
 
+alias cpwd="pwd | print_n_copy"
+alias temp='cd "$(mktemp -d)"'
+mkcd() {
+  mkdir "$1" && cd "$1"
+}
+alias iso-date="date -I | print_n_copy"
+alias iso-datetime="date -Iseconds | print_n_copy"
+
+serve() {
+  python -m http.server&
+  PYTHON_PID=$!
+  open http://localhost:8000
+  cleanup() {
+    kill $PYTHON_PID
+  }
+  trap cleanup INT
+  wait
+}
+
 urlencode() {
  arg_or_paste "$@" | jq -s -R -r @uri | print_n_copy
 }
