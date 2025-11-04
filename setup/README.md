@@ -37,9 +37,6 @@ update Flatpaks on SteamOS.
 the lost startup management feature from GNOME Tweaks.
 * [20-install-duckdb](20-install-duckdb.sh): installs DuckDB.
 * [21-install-libreoffice](21-install-libreoffice.sh): installs LibreOffice.
-* [22-patch-always-show-title-extension](22-patch-always-show-title-extension.sh): patches the extension
-[Always Show Titles In Overview](https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/) for GNOME
-48 supports. Also installs [moreutils](https://joeyh.name/code/moreutils/).
 * [23-install-pandoc-html2markdown](23-install-pandoc-html2markdown.sh): installs Pandoc and [html2markdown](https://github.com/JohannesKaufmann/html-to-markdown).
 * [24-disable-ibus-emoji-hotkey](24-disable-ibus-emoji-hotkey.sh): [disables the Unicode Code Point shortcut](https://superuser.com/questions/358749/how-to-disable-ctrlshiftu/1392682#1392682)
   as it interferes with JetBrains IDEs' "Toggle Case" shortcut (both are set to
@@ -47,6 +44,9 @@ the lost startup management feature from GNOME Tweaks.
 * [25-install-pg_activity](25-install-pg_activity.sh): installs [pg_activity](https://github.com/dalibo/pg_activity).
 * [26-install_rdap](26-install_rdap.sh): installs [OpenRDAP](https://www.openrdap.org/).
 * [27-install-smile](27-install-smile.sh): installs [Smile](https://mijorus.it/projects/smile/) and sets up a keyboard shortcut for it.
+* [28-patch-always-show-title-extension](28-patch-always-show-title-extension.sh): patches the extension
+    [Always Show Titles In Overview](https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/) for GNOME
+    49 support. Also installs [moreutils](https://joeyh.name/code/moreutils/).
 
 ## Other files
 
