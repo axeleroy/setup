@@ -32,9 +32,10 @@ alias iso-date="date -I | print_n_copy"
 alias iso-datetime="date -Iseconds | print_n_copy"
 
 serve() {
-  python -m http.server&
+  PORT=${1:-8000}
+  python -m http.server $PORT&
   PYTHON_PID=$!
-  open http://localhost:8000
+  open "http://localhost:$PORT"
   cleanup() {
     kill $PYTHON_PID
   }
