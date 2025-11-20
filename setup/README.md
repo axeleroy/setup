@@ -47,6 +47,9 @@ the lost startup management feature from GNOME Tweaks.
 * [28-patch-always-show-title-extension](28-patch-always-show-title-extension.sh): patches the extension
     [Always Show Titles In Overview](https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/) for GNOME
     49 support. Also installs [moreutils](https://joeyh.name/code/moreutils/).
+* [29-patch-bluetooth-battery-extension](29-patch-bluetooth-battery-extension.sh): patches the extension
+    [Bluetooth battery indicator](https://extensions.gnome.org/extension/3991/bluetooth-battery/) for GNOME
+    49 support.
 
 ## Other files
 
