@@ -20,14 +20,16 @@ is_hostname() {
 }
 export -f is_hostname
 
+export BREW_PATH=/home/linuxbrew/.linuxbrew/bin/
+
 brew_install() {
   set +u
-  if /home/linuxbrew/.linuxbrew/bin/brew list | grep -Fwq "${1##*/}"
+  if $BREW_PATH/brew list | grep -Fwq "${1##*/}"
   then
     echo "Formulae $1 already installed"
   else
     echo "Installing formulae $1"
-    /home/linuxbrew/.linuxbrew/bin/brew install "$1"
+    $BREW_PATH/brew install "$1"
   fi
   set -u
 }
