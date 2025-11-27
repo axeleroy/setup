@@ -50,6 +50,8 @@ the lost startup management feature from GNOME Tweaks.
 * [29-patch-bluetooth-battery-extension](29-patch-bluetooth-battery-extension.sh): patches the extension
     [Bluetooth battery indicator](https://extensions.gnome.org/extension/3991/bluetooth-battery/) for GNOME
     49 support.
+* [30-install-simple-scan](30-install-simple-scan.sh): installs the SimpleScan flatpak, because apparently it does not 
+come out of the box with Bazzite GNOME.
 
 ## Other files
 
