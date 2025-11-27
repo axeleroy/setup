@@ -84,6 +84,10 @@ csv2md() {
   duckdb -markdown $1 "SELECT * from '$1';" | print_n_copy
 }
 
+md5check() {
+  echo $(wl-paste -n) $1 | md5sum --check
+}
+
 kill_port() {
   sudo fuser -k $1/tcp
 }
