@@ -24,6 +24,7 @@ npm-search() {
 }
 
 alias cpwd="pwd | print_n_copy"
+alias opwd="open $(pwd)"
 alias temp='cd "$(mktemp -d)"'
 mkcd() {
   mkdir "$1" && cd "$1"
