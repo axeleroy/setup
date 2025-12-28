@@ -22,18 +22,10 @@ export -f is_hostname
 
 export BREW_PATH=/home/linuxbrew/.linuxbrew/bin/
 
-brew_install() {
-  set +u
-  if $BREW_PATH/brew list | grep -Fwq "${1##*/}"
-  then
-    echo "Formulae $1 already installed"
-  else
-    echo "Installing formulae $1"
-    $BREW_PATH/brew install "$1"
-  fi
-  set -u
-}
-export -f brew_install
+if [[ $(is_hostname steamdeck) -eq 0 ]]
+then
+  $BREW_PATH/brew bundle
+fi
 
 if [[ ! -x ${SHELL_SETUP_PATH}/setup/migrated.txt ]]
 then

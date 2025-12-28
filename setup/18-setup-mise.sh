@@ -4,6 +4,5 @@ set -euo pipefail
 
 if [[ $(is_hostname steamdeck) -eq 1 ]]; then exit 0; fi
 
-brew_install mise
 mkdir -p ~/.config/mise
 ln -bs ${SHELL_SETUP_PATH}/config/mise ~/.config/mise/config.toml
