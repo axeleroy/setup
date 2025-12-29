@@ -24,7 +24,7 @@ export BREW_PATH=/home/linuxbrew/.linuxbrew/bin/
 
 if [[ $(is_hostname steamdeck) -eq 0 ]]
 then
-  $BREW_PATH/brew bundle
+  $BREW_PATH/brew bundle --file ${SHELL_SETUP_PATH}/setup/Brewfile
 fi
 
 if [[ ! -x ${SHELL_SETUP_PATH}/setup/migrated.txt ]]
