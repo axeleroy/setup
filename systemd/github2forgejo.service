@@ -1,0 +1,11 @@
+[Unit]
+Description=Synchronize GitHub repos with Forgejo
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/axel/.local/bin/github2forgejo
+EnvironmentFile=/home/axel/github2forgejo.env
+
+[Install]
+WantedBy=default.target

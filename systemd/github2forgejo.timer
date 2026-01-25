@@ -1,0 +1,8 @@
+[Unit]
+Description=Synchronize GitHub repos with Forgejo
+
+[Timer]
+OnCalendar=daily
+
+[Install]
+WantedBy=timers.target
