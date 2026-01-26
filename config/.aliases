@@ -23,6 +23,9 @@ npm-search() {
  npm search "$@" | more
 }
 
+cfile() {
+  cat $1 | wl-copy -n
+}
 alias cpwd="pwd | print_n_copy"
 alias opwd='open "$(pwd)"'
 alias temp='cd "$(mktemp -d)"'
