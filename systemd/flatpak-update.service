@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/flatpak --user uninstall --unused -y --noninteractive ; /usr/bin/flatpak --user update -y --noninteractive ; /usr/bin/flatpak --user repair
+ExecStart=/usr/bin/flatpak --system uninstall --unused -y --noninteractive ; /usr/bin/flatpak --system update -y --noninteractive ; /usr/bin/flatpak --system repair
 
 [Install]
 WantedBy=default.target
