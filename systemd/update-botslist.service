@@ -1,0 +1,11 @@
+[Unit]
+Description=Update list of bots to block in Caddy
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/axel/setup/utils/update-botslist.sh
+EnvironmentFile=/root/update-botslist.env
+
+[Install]
+WantedBy=default.target
