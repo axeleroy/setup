@@ -34,6 +34,7 @@ by database migration tools like Flyway.
   [Always Show Titles In Overview](https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/) for
   GNOME
   49 support.
+* [29-set-up-global-pnpm-config](29-set-up-global-pnpm-config.sh): links global pnpm config file.
 
 ## Other files
 
