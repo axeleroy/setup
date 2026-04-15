@@ -59,6 +59,11 @@ $HOME/Games/*/drive_c/users/steamuser/*
 !$HOME/Games/*/drive_c/users/steamuser/Documents/*
 !$HOME/Games/*/drive_c/users/steamuser/Saved Games
 !$HOME/Games/*/drive_c/users/steamuser/Saved Games/*
+$HOME/.config/rcps3/*
+!$HOME/.config/rcps3/savedata
+!$HOME/.config/rcps3/savedata/*
+!$HOME/.config/rcps3/home
+!$HOME/.config/rcps3/home/*
 $HOME/.m2
 $HOME/.gradle
 $HOME/Musique
