@@ -20,6 +20,7 @@ $HOME/**/bin
 $HOME/.nvm
 $HOME/.npm
 $HOME/.docker
+$HOME/.cache
 $HOME/bin
 $HOME/gems
 $HOME/snap
@@ -64,6 +65,12 @@ $HOME/.config/rcps3/*
 !$HOME/.config/rcps3/savedata/*
 !$HOME/.config/rcps3/home
 !$HOME/.config/rcps3/home/*
+$HOME/.var/app/net.rpcs3.RPCS3/cache
+$HOME/.var/app/net.rpcs3.RPCS3/config/rcps3/*
+!$HOME/.var/app/net.rpcs3.RPCS3/config/rcps3/savedata
+!$HOME/.var/app/net.rpcs3.RPCS3/config/rcps3/savedata/*
+!$HOME/.var/app/net.rpcs3.RPCS3/config/rcps3/home
+!$HOME/.var/app/net.rpcs3.RPCS3/config/rcps3/home/*
 $HOME/.m2
 $HOME/.gradle
 $HOME/Musique
