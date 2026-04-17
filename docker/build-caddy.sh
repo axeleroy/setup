@@ -14,4 +14,5 @@ function pprint {
 echo "Fetching latest Caddy version..."
 VERSION=$(curl -s https://api.github.com/repos/caddyserver/caddy/releases/latest | jq -r '.name' | sed -En "s/v(.*)/\1/p")
 pprint "Building Caddy ${BOLD}$VERSION"
-docker build -f caddy-docker/Dockerfile -t "axeleroy/caddy-docker-proxy:$VERSION" --build-arg "CADDY_VERSION=$VERSION" .
+docker build -f caddy-docker/Dockerfile-ovh -t "axeleroy/caddy-ovh:$VERSION" --build-arg "CADDY_VERSION=$VERSION" .
+docker build -f caddy-docker/Dockerfile-ratelimit -t "axeleroy/caddy-ratelimit:$VERSION" --build-arg "CADDY_VERSION=$VERSION" .
