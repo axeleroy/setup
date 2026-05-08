@@ -3,14 +3,14 @@
 This folder contains scripts used to set up my computers. They are executed by a [migration script](migrate.sh) inspired
 by database migration tools like Flyway.
 
+In addition, it installs utilities and applications listed in [Brewfile](Brewfile), as well as GNOME Extensions listed 
+in [gnome-extensions-management](gnome-extensions-management).
+
 ## Migrations
 
 * [01-install-base-software](01-install-base-software.sh): seeds `teeldear`'s config and installs `isd` and
   `gnome-extensions-cli` through `uv`.
 * [02-set-config](02-set-config.sh): copies my shell config files.
-* [04-setup-base-gnome-extensions.sh](04-setup-base-gnome-extensions.sh): installs and enables preferred GNOME
-  extensions
-  using [gnome-extensions-cli](https://github.com/essembeh/gnome-extensions-cli).
 * [06-setup-services](06-setup-services.sh): sets up the automated backup service, as well as a service that pulls this
   repo on startup.
 * [07-enable-pipewire-switch-on-connect](07-enable-pipewire-switch-on-connect.sh): enables Pipewire's
@@ -35,10 +35,3 @@ by database migration tools like Flyway.
   GNOME
   49 support.
 * [29-set-up-global-pnpm-config](29-set-up-global-pnpm-config.sh): links global pnpm config file.
-
-## Other files
-
-* [Brewfile](Brewfile): Homebrew Bundle containing utilities and applications to install.
-* [gnome-extensions-install-list.txt](gnome-extensions-install-list.txt)
-  and [gnome-extensions-disable-list.txt](gnome-extensions-disable-list.txt): Gnome Shell extensions installed and
-  disabled by [04-setup-base-gnome-extensions.sh](04-setup-base-gnome-extensions.sh). 

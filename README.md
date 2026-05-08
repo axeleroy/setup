@@ -12,6 +12,7 @@ Various configuration files and scripts used to synchronise setup across my comp
 ## Variables to set in `~/.extra`
 
 * `SHELL_SETUP_PATH`: path to this project.
+* `COMPUTER_TYPE`: type of the computer to set up (`laptop|desktop|steamdeck`).
 
 ### Backups & Synchronization
 * `RESTIC_REPOSITORY`: used in [restic-desktop.sh](backup/restic-desktop.sh) to set where my backup should live on my NAS.

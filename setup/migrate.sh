@@ -24,6 +24,7 @@ export BREW_PATH=/home/linuxbrew/.linuxbrew/bin/
 
 if [[ $(is_hostname steamdeck) -eq 0 ]]
 then
+  echo "Installing Brew formulas and Flatpaks"
   $BREW_PATH/brew bundle --file ${SHELL_SETUP_PATH}/setup/Brewfile
 fi
 
@@ -44,3 +45,6 @@ for migration_file in ${SHELL_SETUP_PATH}/setup/[0-9]*.sh; do
     echo "$migration" >> ${SHELL_SETUP_PATH}/setup/migrated.txt
   fi
 done
+
+echo "Installing GNOME Extensions"
+bash ${SHELL_SETUP_PATH}/setup/gnome-extensions-management/manage.sh
