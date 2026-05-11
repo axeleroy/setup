@@ -1,2 +1,3 @@
 lemmy_pictrs/_data/files
 registry_data/
+forgejo-runner/_data/.cache
