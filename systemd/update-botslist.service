@@ -4,8 +4,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/home/axel/setup/utils/update-botslist.sh
-EnvironmentFile=/root/update-botslist.env
+ExecStart=/etc/komodo/repos/infra/stacks/local/caddy/update-botslist.sh
 
 [Install]
 WantedBy=default.target
