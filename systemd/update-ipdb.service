@@ -4,8 +4,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-WorkingDirectory=/var/lib/docker/volumes/caddy_etc-caddy_ext/_data
-ExecStart=/var/lib/docker/volumes/caddy_etc-caddy_ext/_data/update_geodb.sh
+ExecStart=/etc/komodo/repos/infra/stacks/local/caddy/update-geodb.sh
 
 [Install]
 WantedBy=default.target
