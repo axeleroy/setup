@@ -4,7 +4,7 @@ set -euo pipefail
 
 if [[ $(is_hostname steamdeck) -eq 1 ]]; then exit 0; fi
 
-if ! command -v gnome-extensions-cli 2>&1 >/dev/null
+if ! command -v $HOME/.local/bin/gnome-extensions-cli 2>&1 >/dev/null
 then
     echo "gnome-extensions-cli is required"
     exit 1
@@ -14,7 +14,7 @@ function install() {
   while IFS= read -r line
   do
       echo "Installing $line"
-      gnome-extensions-cli install "$line"
+      $HOME/.local/bin/gnome-extensions-cli install "$line"
   done <<< "$1"
 }
 
@@ -22,7 +22,7 @@ function disable() {
   while IFS= read -r line
   do
       echo "Disabling $line"
-      gnome-extensions-cli disable "$line"
+      $HOME/.local/bin/gnome-extensions-cli disable "$line"
   done <<< "$1"
 }
 
@@ -39,9 +39,9 @@ function list_extensions_to_install() {
 }
 
 function list_extensions_to_disable() {
-  comm -13 <(list_extensions_to_install | sort) <(gnome-extensions-cli list --only-uuid | sort)
+  comm -13 <(list_extensions_to_install | sort) <($HOME/.local/bin/gnome-extensions-cli list --only-uuid | sort)
 }
 
 install "$(list_extensions_to_install)"
-disable "$(list_extensions_to_disable)
+disable "$(list_extensions_to_disable)"
 

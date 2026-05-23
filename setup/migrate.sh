@@ -29,7 +29,7 @@ then
 fi
 
 echo "Installing GNOME Extensions"
-bash ${SHELL_SETUP_PATH}/setup/gnome-extensions-management/manage.sh
+bash "${SHELL_SETUP_PATH}/setup/gnome-extensions-management/manage.sh"
 
 if [[ ! -x ${SHELL_SETUP_PATH}/setup/migrated.txt ]]
 then
