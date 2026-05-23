@@ -28,11 +28,11 @@ function disable() {
 
 function list_extensions_to_install() {
   EXTENSION_LIST_FILE=$(mktemp)
-  cat ${SHELL_SETUP_PATH}/setup/gnome-extensions-management/enable-common.list > $EXTENSION_LIST_FILE
+  cat "${SHELL_SETUP_PATH}/setup/gnome-extensions-management/enable-common.list" > $EXTENSION_LIST_FILE
   set +u
   if [[ -z ${COMPUTER_TYPE+x}  ]]
   then
-    cat ${SHELL_SETUP_PATH}/setup/gnome-extensions-management/enable-${COMPUTER_TYPE}.list >> $EXTENSION_LIST_FILE
+    cat "${SHELL_SETUP_PATH}/setup/gnome-extensions-management/enable-${COMPUTER_TYPE}.list" >> $EXTENSION_LIST_FILE
   fi
   set -u
   cat $EXTENSION_LIST_FILE
