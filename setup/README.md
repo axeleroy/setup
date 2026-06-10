@@ -32,3 +32,4 @@ in [gnome-extensions-management](gnome-extensions-management).
 * [25-install-pg_activity](25-install-pg_activity.sh): installs [pg_activity](https://github.com/dalibo/pg_activity).
 * [29-set-up-global-pnpm-config](29-set-up-global-pnpm-config.sh): links global pnpm config file.
 * [30-patch-extensions-for-gnome-50](30-patch-extensions-for-gnome-50.sh): patches extensions GNOME 50 support.
+* [31-re-enable-middle-click-paste](31-re-enable-middle-click-paste.sh): re-enables middle-click paste.
