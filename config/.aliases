@@ -1,5 +1,5 @@
 # Replace jq with gojq
-alias realjq="jq"
+alias realjq="$(which jq)"
 alias jq="gojq"
 
 loremcopy() {
