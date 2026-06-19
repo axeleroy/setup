@@ -2,8 +2,6 @@
 
 set -euo pipefail
 
-if [[ $(is_hostname steamdeck) -eq 1 ]]; then exit 0; fi
-
 if ! command -v $HOME/.local/bin/gnome-extensions-cli 2>&1 >/dev/null
 then
     echo "gnome-extensions-cli is required"

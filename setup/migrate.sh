@@ -26,10 +26,10 @@ if [[ $(is_hostname steamdeck) -eq 0 ]]
 then
   echo "Installing Brew formulas and Flatpaks"
   $BREW_PATH/brew bundle --file ${SHELL_SETUP_PATH}/setup/Brewfile
+  echo "Installing GNOME Extensions"
+  bash "${SHELL_SETUP_PATH}/setup/gnome-extensions-management/manage.sh"
 fi
 
-echo "Installing GNOME Extensions"
-bash "${SHELL_SETUP_PATH}/setup/gnome-extensions-management/manage.sh"
 
 if [[ ! -x ${SHELL_SETUP_PATH}/setup/migrated.txt ]]
 then
