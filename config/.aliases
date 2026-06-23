@@ -19,10 +19,6 @@ rdap_more() {
 }
 alias rdap=rdap_more
 
-npm-search() {
- npm search "$@" | more
-}
-
 cfile() {
   cat $1 | wl-copy -n
 }
