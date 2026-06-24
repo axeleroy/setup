@@ -1,3 +1,2 @@
 johanneskaufmann/tap/html2markdown
 xlith/lipsum-cli/lipsum-cli
-moghtech/komodo/km

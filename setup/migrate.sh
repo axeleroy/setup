@@ -27,7 +27,7 @@ then
   echo "Trusting Brew taps"
   while IFS= read -r line
   do
-      $BREW_PATH/brew trust "$line"
+      $BREW_PATH/brew trust --formula "$line"
   done < "${SHELL_SETUP_PATH}/setup/brew_trust.txt"
   echo "Installing Brew formulas and Flatpaks"
   $BREW_PATH/brew bundle --file ${SHELL_SETUP_PATH}/setup/Brewfile
