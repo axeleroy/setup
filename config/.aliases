@@ -56,7 +56,7 @@ base64decode() {
   arg_or_paste "$@" | base64 -d | print_n_copy
 }
 
-alias formatjson='wl-paste | json_reformat | print_n_copy'
+alias formatjson='wl-paste | jq | print_n_copy'
 alias minifyjson='wl-paste | jq -c -r | print_n_copy'
 
 alias unescapehtml="wl-paste -n | python3 -c 'import html, sys; [print(html.unescape(l), end=\"\") for l in sys.stdin]' | print_n_copy"
