@@ -1,8 +1,0 @@
-[Unit]
-Description=Update list of bots to block in Caddy
-
-[Timer]
-OnCalendar=daily
-
-[Install]
-WantedBy=timers.target
