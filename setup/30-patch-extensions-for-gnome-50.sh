@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if [[ $(is_hostname steamdeck) -eq 1 ]]; then exit 0; fi
+if [[ $(is_hostname steamdeck) -eq 1 || $(is_wsl) -eq 1 ]]; then exit 0; fi
 
 EXTENSION_UUIDS="bluetooth-battery@michalw.github.com Always-Show-Titles-In-Overview@gmail.com gnome-ui-tune@itstime.tech auto-theme-switcher@amritashan.github.io"
 

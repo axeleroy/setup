@@ -2,6 +2,6 @@
 
 set -euo pipefail
 
-if [[ $(is_hostname steamdeck) -eq 1 ]]; then exit 0; fi
+if [[ $(is_hostname steamdeck) -eq 1 || $(is_wsl) -eq 1 ]]; then exit 0; fi
 
 gsettings set org.freedesktop.ibus.panel.emoji unicode-hotkey "@as []"

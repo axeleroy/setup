@@ -20,6 +20,18 @@ is_hostname() {
 }
 export -f is_hostname
 
+is_wsl() {
+  set +u
+  if [ -f /usr/bin/wslinfo ]
+  then
+      echo 1
+    else
+      echo 0
+    fi
+    set -u
+}
+export -f is_wsl
+
 export BREW_PATH=/home/linuxbrew/.linuxbrew/bin/
 
 if [[ $(is_hostname steamdeck) -eq 0 ]]
@@ -29,10 +41,15 @@ then
   do
       $BREW_PATH/brew trust --formula "$line"
   done < "${SHELL_SETUP_PATH}/setup/brew_trust.txt"
-  echo "Installing Brew formulas and Flatpaks"
+  echo "Installing Brew formulas"
   $BREW_PATH/brew bundle --file ${SHELL_SETUP_PATH}/setup/Brewfile
-  echo "Installing GNOME Extensions"
-  bash "${SHELL_SETUP_PATH}/setup/gnome-extensions-management/manage.sh"
+  if [[ $(is_wsl) -eq 0 ]]
+  then
+    echo "Installing Flatpaks"
+      $BREW_PATH/brew bundle --file ${SHELL_SETUP_PATH}/setup/flatpaks.Brewfile
+    echo "Installing GNOME Extensions"
+    bash "${SHELL_SETUP_PATH}/setup/gnome-extensions-management/manage.sh"
+  fi
 fi
 
 
