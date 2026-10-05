@@ -43,6 +43,11 @@ serve() {
   wait
 }
 
+genpwd() {
+  LENGTH=${1:-16}
+  cat /dev/urandom | tr -dc '[:print:]' | tr -d "[:space:]#'" | fold -w $LENGTH | head -n 1 | print_n_copy
+}
+
 urlencode() {
  arg_or_paste "$@" | jq -s -R -r @uri | print_n_copy
 }
