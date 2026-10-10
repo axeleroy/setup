@@ -33,3 +33,4 @@ in [gnome-extensions-management](gnome-extensions-management).
 * [30-patch-extensions-for-gnome-50](30-patch-extensions-for-gnome-50.sh): patches extensions GNOME 50 support.
 * [31-re-enable-middle-click-paste](31-re-enable-middle-click-paste.sh): re-enables middle-click paste.
 * [33-fix-global-pnpm-config](33-fix-global-pnpm-config.sh): links global pnpm config file.
+* [34-update-backup-service](34-update-backup-service.sh): updates `backup.service` to run `restic unlock` on stop.

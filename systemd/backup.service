@@ -5,6 +5,7 @@ After=network.target
 [Service]
 Type=oneshot
 ExecStart=SHELL_SETUP_PATH/backup/restic-desktop.sh
+ExecStop=SHELL_SETUP_PATH/backup/restic-unlock.sh
 
 [Install]
 WantedBy=default.target
